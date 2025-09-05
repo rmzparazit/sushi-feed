@@ -186,10 +186,15 @@ def parse_catalog_page(session, base_url):
                         continue  # Пропускаем только без ID
 
                     # 🔔 Логируем дубль, но НЕ пропускаем товар
-                    if vendor_code in seen_ids:
-                        meta_name = item.find('meta', {'name': 'name'})
-                        original_name = meta_name['content'].strip() if meta_name else 'Без названия'
+                    original_vendor_code = vendor_code
+                    counter = 1
+                    while vendor_code in seen_ids:
                         log(f"🔁 Дубль: vendorCode={vendor_code}, Название='{original_name}', URL={full_link}")
+                        vendor_code = f"{original_vendor_code}_{counter}"
+                        counter += 1
+                        if counter > 10:  # Защита от бесконечного цикла
+                            log("⚠️ Слишком много дублей, пропускаем")
+                            continue
 
                     # 🔍 Название
                     original_name = (item.find('meta', {'name': 'name'})['content'].strip()
