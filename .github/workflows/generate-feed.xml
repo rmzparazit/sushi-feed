@@ -24,7 +24,7 @@ jobs:
 
       - name: 🚀 Запустить скрипт
         run: |
-          python sushi.py
+          python feed/sushi.py
 
       - name: ✅ Проверить, создан ли фид
         run: |
