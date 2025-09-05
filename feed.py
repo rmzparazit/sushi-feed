@@ -134,7 +134,7 @@ def parse_product_page(session, url):
 def parse_catalog_page(session, base_url):
     log(f"🔍 Начинаем парсинг каталога: {base_url}")
     products = []
-    seen_ids = set()  # Для логирования дублей
+    seen_ids = set()  # Для отслеживания уникальности
     page_num = 1
 
     while True:
@@ -166,6 +166,10 @@ def parse_catalog_page(session, base_url):
                     full_link = make_full_url(link)
                     full_link = clean_url(full_link)
 
+                    # 🔍 Название (нужно ДО проверки дублей)
+                    meta_name = item.find('meta', {'name': 'name'})
+                    original_name = meta_name['content'].strip() if meta_name else 'Без названия'
+
                     # 🔎 1. Пытаемся извлечь product_id из URL
                     product_id = None
                     if 'product_id=' in full_link:
@@ -181,25 +185,25 @@ def parse_catalog_page(session, base_url):
                     item_id = item_id_input['value'].strip() if item_id_input else None
 
                     # ✅ Приоритет: product_id > item_id
-                    vendor_code = product_id or item_id
-                    if not vendor_code:
-                        continue  # Пропускаем только без ID
+                    base_vendor_code = product_id or item_id
+                    if not base_vendor_code:
+                        log(f"⚠️ Пропущен товар: нет vendorCode (ссылка: {full_link})")
+                        continue
 
-                    # 🔔 Логируем дубль, но НЕ пропускаем товар
-                    original_vendor_code = vendor_code
+                    # 🔁 Генерируем уникальный vendor_code
+                    vendor_code = base_vendor_code
                     counter = 1
+                    original_vendor_code = vendor_code
+
                     while vendor_code in seen_ids:
-                        log(f"🔁 Дубль: vendorCode={vendor_code}, Название='{original_name}', URL={full_link}")
+                        log(f"🔁 Дубль: vendorCode={original_vendor_code}, Название='{original_name}', URL={full_link}")
                         vendor_code = f"{original_vendor_code}_{counter}"
                         counter += 1
-                        if counter > 10:  # Защита от бесконечного цикла
-                            log("⚠️ Слишком много дублей, пропускаем")
+                        if counter > 10:  # Защита от зацикливания
+                            log(f"⚠️ Слишком много дублей для {original_vendor_code}, пропускаем")
                             continue
 
-                    # 🔍 Название
-                    original_name = (item.find('meta', {'name': 'name'})['content'].strip()
-                                     if item.find('meta', {'name': 'name'}) else 'Без названия')
-                    formatted_name = format_name(original_name)
+                    # ✅ Теперь vendor_code уникален
 
                     # 🔍 Цена
                     price_tag = item.find('span', class_='price-fixed')
@@ -227,7 +231,7 @@ def parse_catalog_page(session, base_url):
                     product = {
                         'id': vendor_code,
                         'vendorCode': vendor_code,
-                        'name': formatted_name,
+                        'name': format_name(original_name),
                         'original_name': original_name,
                         'price': price,
                         'url': full_link,
