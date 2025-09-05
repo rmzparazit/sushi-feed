@@ -24,16 +24,15 @@ jobs:
 
       - name: 🚀 Запустить скрипт
         run: |
-          python feed.py
+          python sushi_street_feed.py
 
       - name: 🔍 Проверить, создан ли фид
         run: |
           if [ -f "sushi_street_catalog.xml" ]; then
-            echo "✅ Фид успешно создан: $(ls -la sushi_street_catalog.xml)"
-            echo "Размер: $(wc -c < sushi_street_catalog.xml) байт"
+            echo "✅ Фид создан, размер: $(wc -c < sushi_street_catalog.xml) байт"
           else
             echo "❌ Ошибка: фид не создан"
-            ls -la  # Показать, что есть в папке
+            ls -la
             exit 1
           fi
 
@@ -41,15 +40,18 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-      
+
+          # Проверяем, изменился ли фид
           if git diff --quiet sushi_street_catalog.xml; then
             echo "ℹ️ Фид не изменился — коммит не нужен"
-          else
-            git add sushi_street_catalog.xml
-            git commit -m "Обновлен фид: $(date)"
-            
-            # Используем PAT для push
-            git remote set-url origin https://x-access-token:${{ secrets.REPO_PAT }}@github.com/rmzparazit/sushi-feed.git
-            git push origin main
-            echo "✅ Фид обновлён и загружен"
+            exit 0
           fi
+
+          # Подготавливаем коммит
+          git add sushi_street_catalog.xml
+          git commit -m "Обновлен фид: $(date)"
+
+          # Push с токеном
+          git remote set-url origin https://x-access-token:${{ secrets.REPO_PAT }}@github.com/rmzparazit/sushi-feed.git
+          git push origin main
+          echo "✅ Фид успешно обновлён и загружен"
