@@ -2,29 +2,31 @@ name: Генерация YML-фида
 
 on:
   schedule:
-    - cron: '0 21 * * *'  # Каждый день в 00:00 МСК
-  workflow_dispatch:     # Позволяет запускать вручную
+    - cron: '0 21 * * *'  # Каждый день в 00:00 UTC
+  workflow_dispatch:
 
 jobs:
   generate-feed:
     runs-on: ubuntu-latest
 
     steps:
-      - name:  Клонировать репозиторий
+      - name: 📥 Клонировать репозиторий
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REPO_PAT }}  # ← Ключевая строка
 
-      - name:  Установить Python
+      - name: 🐍 Установить Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name:  Установить зависимости
+      - name: 📦 Установить зависимости
         run: |
           pip install requests beautifulsoup4 lxml
 
       - name: 🚀 Запустить скрипт
         run: |
-          python feed.py
+          python sfeed.py
 
       - name: 🔍 Проверить, создан ли фид
         run: |
@@ -36,22 +38,17 @@ jobs:
             exit 1
           fi
 
-      - name: 📤 Обновить фид в репозитории
+      - name: 📤 Загрузить обновления
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Проверяем, изменился ли фид
           if git diff --quiet sushi_street_catalog.xml; then
             echo "ℹ️ Фид не изменился — коммит не нужен"
             exit 0
           fi
 
-          # Подготавливаем коммит
           git add sushi_street_catalog.xml
           git commit -m "Обновлен фид: $(date)"
-
-          # Push с токеном
-          git remote set-url origin https://x-access-token:${{ secrets.REPO_PAT }}@github.com/rmzparazit/sushi-feed.git
-          git push origin main
-          echo "✅ Фид успешно обновлён и загружен"
+          git push  # Теперь push работает, потому что checkout был с токеном
+          echo "✅ Фид обновлён и загружен"
