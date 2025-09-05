@@ -10,21 +10,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Клонировать репозиторий
+      - name:  Клонировать репозиторий
         uses: actions/checkout@v4
 
-      - name: 🐍 Установить Python
+      - name:  Установить Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: 📦 Установить зависимости
+      - name:  Установить зависимости
         run: |
           pip install requests beautifulsoup4 lxml
 
       - name: 🚀 Запустить скрипт
         run: |
-          python sushi_street_feed.py
+          python feed.py
 
       - name: 🔍 Проверить, создан ли фид
         run: |
