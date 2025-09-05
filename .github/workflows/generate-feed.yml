@@ -41,12 +41,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+      
           if git diff --quiet sushi_street_catalog.xml; then
             echo "ℹ️ Фид не изменился — коммит не нужен"
           else
             git add sushi_street_catalog.xml
             git commit -m "Обновлен фид: $(date)"
-            git push
+            
+            # Используем PAT для push
+            git remote set-url origin https://x-access-token:${{ secrets.REPO_PAT }}@github.com/rmzparazit/sushi-feed.git
+            git push origin main
             echo "✅ Фид обновлён и загружен"
           fi
