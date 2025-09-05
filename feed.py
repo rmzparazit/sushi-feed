@@ -9,10 +9,10 @@ import re
 import urllib.parse
 
 # --- НАСТРОЙКИ ---
-BASE_URL = "."
+BASE_URL = "https://суши-стрит.рф/nabory/"
 BASE_DOMAIN = "https://суши-стрит.рф"
-OUTPUT_DIR = "output_sushi_street"
-YML_FILE = os.path.join(OUTPUT_DIR, "sushi_street_catalog.xml")
+OUTPUT_DIR = "."
+YML_FILE = "sushi_street_catalog.xml"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
