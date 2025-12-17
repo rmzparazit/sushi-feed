@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<yml_catalog date="2025-12-16T21:25:35">
+<yml_catalog date="2025-12-17T21:25:38">
   <shop>
     <name>Суши Стрит</name>
     <company>Суши Стрит Рязань</company>
@@ -12,6 +12,38 @@
       <category id="1">Суши и роллы</category>
     </categories>
     <offers>
+      <offer id="301" available="true">
+        <name>Сет &quot;Девичник&quot;</name>
+        <vendorCode>301</vendorCode>
+        <url><![CDATA[https://суши-стрит.рф/catalog/detail/301/]]></url>
+        <price>1019</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_301.jpg</picture>
+        <description>Состав: Филадельфия лайт,калифорния с кунжутом,маки с огурцом,маки с креветкой.Вес 650/28шт *В данный набор не входит имбирь,васаби, соевый соус.</description>
+        <sales_notes>Артикул: 301. Доставка по Рязани.</sales_notes>
+        <collectionId>s_filedelfiej</collectionId>
+        <param name="pieces">28</param>
+        <param name="roll_type">Филадельфия лайт</param>
+        <param name="roll_type">калифорния с кунжутом</param>
+        <param name="roll_type">маки с огурцом</param>
+        <param name="roll_type">маки с креветкой.</param>
+      </offer>
+      <offer id="316" available="true">
+        <name>Сет &quot;Три хита&quot;</name>
+        <vendorCode>316</vendorCode>
+        <url><![CDATA[https://суши-стрит.рф/catalog/detail/316/]]></url>
+        <price>1059</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_316.jpg</picture>
+        <description>Филадельфия лайт, запеченый с креветкой, цезарь темпура. Вес 700гр/24шт. *В данный набор не входит имбирь,васаби, соевый соус.</description>
+        <sales_notes>Артикул: 316. Доставка по Рязани.</sales_notes>
+        <collectionId>hity</collectionId>
+        <collectionId>s_filedelfiej</collectionId>
+        <param name="weight">700</param>
+        <param name="pieces">24</param>
+      </offer>
       <offer id="312" available="true">
         <name>Сет &quot;Семейный&quot;</name>
         <vendorCode>312</vendorCode>
@@ -41,8 +73,8 @@
         <description>Состав: Маки с окунем и сырным соусом, маки кларий-краб, маки с курицей и яки соусом, маки с кальмаром и снежным крабом в фирменном соусе, р олл калифорния темпура, ролл имбирная темпура, ролл  цыпа барбекю темпура, оушен темпура, филадельфия лайт, калифорния, микс ролл, маки с огурцом, самурай. 3кг/102 шт *Данный набор является акционным и с другими акциями не суммируется. *В набор не входят специи (имбирь,васаби,соевый соус).</description>
         <sales_notes>Артикул: 318. Доставка по Рязани.</sales_notes>
         <collectionId>kilogrammovye</collectionId>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
         <param name="pieces">102</param>
         <param name="roll_type">Маки с окунем и сырным соусом</param>
         <param name="roll_type">маки кларий-краб</param>
@@ -90,8 +122,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_296.jpg</picture>
         <description>Темпура с креветкой, темпура с лососем, цезарь темпура, филадельфия лайт, калифорния тамаго, ролл весна,запеченный с курицей, спайси с лососем, 1/2 запечнный с сыром. Вес: 1740 гр 68 шт. *Данный промонабор не суммируется с другими акциями и спец.предложениями *Имбирь,васаби,соевый соус, палочки, к данному набору не прилагаются.</description>
         <sales_notes>Артикул: 296. Доставка по Рязани.</sales_notes>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
         <param name="weight">1740</param>
         <param name="pieces">68</param>
       </offer>
@@ -124,8 +156,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_295.jpg</picture>
         <description>Состав: филадельфия лайт, самурай, краб-курица ролл, краб-лосось ролл, запеченный яки-лосось  темпура маки с  креветкой, темпура маки с лососем, темпура маки с кальмаром, темпура маки снежный краб. Вес 1760 гр Количество 64 шт. *Данный промонабор не суммируется с другими акциями и спец.предложениями *Имбирь,васаби,соевый соус к данному набору не прилагаются.</description>
         <sales_notes>Артикул: 295. Доставка по Рязани.</sales_notes>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
         <param name="weight">1760</param>
         <param name="pieces">64</param>
         <param name="roll_type">филадельфия лайт</param>
@@ -155,38 +187,6 @@
         <param name="roll_type">самурай</param>
         <param name="roll_type">маки с огурцом</param>
         <param name="roll_type">маки креветка-кальмар.</param>
-      </offer>
-      <offer id="301" available="true">
-        <name>Сет &quot;Девичник&quot;</name>
-        <vendorCode>301</vendorCode>
-        <url><![CDATA[https://суши-стрит.рф/catalog/detail/301/]]></url>
-        <price>1019</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>1</categoryId>
-        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_301.jpg</picture>
-        <description>Состав: Филадельфия лайт,калифорния с кунжутом,маки с огурцом,маки с креветкой.Вес 650/28шт *В данный набор не входит имбирь,васаби, соевый соус.</description>
-        <sales_notes>Артикул: 301. Доставка по Рязани.</sales_notes>
-        <collectionId>s_filedelfiej</collectionId>
-        <param name="pieces">28</param>
-        <param name="roll_type">Филадельфия лайт</param>
-        <param name="roll_type">калифорния с кунжутом</param>
-        <param name="roll_type">маки с огурцом</param>
-        <param name="roll_type">маки с креветкой.</param>
-      </offer>
-      <offer id="316" available="true">
-        <name>Сет &quot;Три хита&quot;</name>
-        <vendorCode>316</vendorCode>
-        <url><![CDATA[https://суши-стрит.рф/catalog/detail/316/]]></url>
-        <price>1059</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>1</categoryId>
-        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_316.jpg</picture>
-        <description>Филадельфия лайт, запеченый с креветкой, цезарь темпура. Вес 700гр/24шт. *В данный набор не входит имбирь,васаби, соевый соус.</description>
-        <sales_notes>Артикул: 316. Доставка по Рязани.</sales_notes>
-        <collectionId>s_filedelfiej</collectionId>
-        <collectionId>hity</collectionId>
-        <param name="weight">700</param>
-        <param name="pieces">24</param>
       </offer>
       <offer id="105" available="true">
         <name>Сет &quot;50/50&quot;</name>
@@ -239,8 +239,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_290.jpg</picture>
         <description>Состав: Филадельфия лайт, Аляска, калифорния с лососем гриль, Мини ролл огурец, Оушен темпура, Калифорния темпура, Маки кларий-краб, Маки с курицей и яки соусом. *К набору не прилагается соевый соус ,имбирь и васаби, при необходимости данные позиции заказываются отдельно. Количество: 62 шт. Вес: 1.7 кг.</description>
         <sales_notes>Артикул: 290. Доставка по Рязани.</sales_notes>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
         <param name="pieces">62</param>
         <param name="roll_type">Филадельфия лайт</param>
         <param name="roll_type">Аляска</param>
@@ -262,8 +262,8 @@
         <description>Состав: филадельфия лайт, калифорния, цезарь темпура, калифорния темпура, маки огурец.Вес 1кг/38шт. *В набор из данной категории не входят имбирь,васаби и соевый соус,и оплачивается отдельно при необходимости. *Набор является акционным и не суммируется с другими акциями и предложениями.</description>
         <sales_notes>Артикул: 86. Доставка по Рязани.</sales_notes>
         <collectionId>kilogrammovye</collectionId>
-        <collectionId>akcii</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>akcii</collectionId>
         <param name="pieces">38</param>
         <param name="roll_type">филадельфия лайт</param>
         <param name="roll_type">калифорния</param>
@@ -289,6 +289,20 @@
         <param name="roll_type">Калифорния классчическая</param>
         <param name="roll_type">мини ролл огурец.</param>
       </offer>
+      <offer id="222" available="true">
+        <name>Сет &quot;ВЕЧЕРОК&quot;</name>
+        <vendorCode>222</vendorCode>
+        <url><![CDATA[https://суши-стрит.рф/index.php?route=product/product&amp;path=60_98&amp;product_id=222]]></url>
+        <price>1269</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_43.jpg</picture>
+        <description>Филадельфия лайт, аляска, калифорния с лососем гриль , мини ролл огурец..Вес 730гр/30шт.</description>
+        <sales_notes>Артикул: 222. Доставка по Рязани.</sales_notes>
+        <collectionId>s_filedelfiej</collectionId>
+        <param name="weight">730</param>
+        <param name="pieces">30</param>
+      </offer>
       <offer id="87" available="true">
         <name>Сет &quot;ЗАПЕЧЕННЫЙ КИЛОГРАММ&quot;</name>
         <vendorCode>87</vendorCode>
@@ -307,19 +321,21 @@
         <param name="roll_type">маки с курицей и яки соусом</param>
         <param name="roll_type">маки с кальмаром и снежным крабом в фирменном соусе. Вес 1000гр32шт.</param>
       </offer>
-      <offer id="222" available="true">
-        <name>Сет &quot;ВЕЧЕРОК&quot;</name>
-        <vendorCode>222</vendorCode>
-        <url><![CDATA[https://суши-стрит.рф/index.php?route=product/product&amp;path=60_98&amp;product_id=222]]></url>
-        <price>1269</price>
+      <offer id="301_1" available="true">
+        <name>Сет &quot;КАБУКИ&quot;</name>
+        <vendorCode>301_1</vendorCode>
+        <url><![CDATA[https://суши-стрит.рф/index.php?route=product/product&amp;path=60_98&amp;product_id=301]]></url>
+        <price>899</price>
         <currencyId>RUB</currencyId>
         <categoryId>1</categoryId>
-        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_43.jpg</picture>
-        <description>Филадельфия лайт, аляска, калифорния с лососем гриль , мини ролл огурец..Вес 730гр/30шт.</description>
-        <sales_notes>Артикул: 222. Доставка по Рязани.</sales_notes>
-        <collectionId>s_filedelfiej</collectionId>
-        <param name="weight">730</param>
-        <param name="pieces">30</param>
+        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_44.jpg</picture>
+        <description>Состав: ролл запеченный с курицей, хот чикен, ролл запеченный кальмар.Вес 650гр/24 шт.</description>
+        <sales_notes>Артикул: 301_1. Доставка по Рязани.</sales_notes>
+        <param name="weight">650</param>
+        <param name="pieces">24</param>
+        <param name="roll_type">ролл запеченный с курицей</param>
+        <param name="roll_type">хот чикен</param>
+        <param name="roll_type">ролл запеченный кальмар.</param>
       </offer>
       <offer id="107" available="true">
         <name>Сет &quot;STREET ELITE&quot;</name>
@@ -352,21 +368,24 @@
         <param name="roll_type">ролл  цыпа барбекю темпура</param>
         <param name="roll_type">оушен темпура.</param>
       </offer>
-      <offer id="301_1" available="true">
-        <name>Сет &quot;КАБУКИ&quot;</name>
-        <vendorCode>301_1</vendorCode>
-        <url><![CDATA[https://суши-стрит.рф/index.php?route=product/product&amp;path=60_98&amp;product_id=301]]></url>
-        <price>899</price>
+      <offer id="91" available="true">
+        <name>Сет &quot;КИЛОГРАММОВЫЙ МИКС&quot;</name>
+        <vendorCode>91</vendorCode>
+        <url><![CDATA[https://суши-стрит.рф/akcii/kilogrammovyj%20miks]]></url>
+        <price>1059</price>
         <currencyId>RUB</currencyId>
         <categoryId>1</categoryId>
-        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_44.jpg</picture>
-        <description>Состав: ролл запеченный с курицей, хот чикен, ролл запеченный кальмар.Вес 650гр/24 шт.</description>
-        <sales_notes>Артикул: 301_1. Доставка по Рязани.</sales_notes>
-        <param name="weight">650</param>
-        <param name="pieces">24</param>
-        <param name="roll_type">ролл запеченный с курицей</param>
-        <param name="roll_type">хот чикен</param>
-        <param name="roll_type">ролл запеченный кальмар.</param>
+        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_91.jpg</picture>
+        <description>Состав: Оушен темпура, калифорния темпура, маки кларий-краб,маки с курицей и яки соусом.Вес 1000гр/32шт. *Набор Килограммовый микс является акционным и с другими акциями не суммируется. *В набор из данной категории не входят имбирь,васаби и соевый соус,и оплачивается отдельно при необходимости.</description>
+        <sales_notes>Артикул: 91. Доставка по Рязани.</sales_notes>
+        <collectionId>kilogrammovye</collectionId>
+        <collectionId>akcii</collectionId>
+        <param name="weight">1000</param>
+        <param name="pieces">32</param>
+        <param name="roll_type">Оушен темпура</param>
+        <param name="roll_type">калифорния темпура</param>
+        <param name="roll_type">маки кларий-краб</param>
+        <param name="roll_type">маки с курицей и яки соусом.</param>
       </offer>
       <offer id="302" available="true">
         <name>Сет &quot;КВАТРО&quot;</name>
@@ -398,25 +417,6 @@
         <collectionId>s_filedelfiej</collectionId>
         <param name="weight">1020</param>
         <param name="pieces">38</param>
-      </offer>
-      <offer id="91" available="true">
-        <name>Сет &quot;КИЛОГРАММОВЫЙ МИКС&quot;</name>
-        <vendorCode>91</vendorCode>
-        <url><![CDATA[https://суши-стрит.рф/akcii/kilogrammovyj%20miks]]></url>
-        <price>1059</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>1</categoryId>
-        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_91.jpg</picture>
-        <description>Состав: Оушен темпура, калифорния темпура, маки кларий-краб,маки с курицей и яки соусом.Вес 1000гр/32шт. *Набор Килограммовый микс является акционным и с другими акциями не суммируется. *В набор из данной категории не входят имбирь,васаби и соевый соус,и оплачивается отдельно при необходимости.</description>
-        <sales_notes>Артикул: 91. Доставка по Рязани.</sales_notes>
-        <collectionId>kilogrammovye</collectionId>
-        <collectionId>akcii</collectionId>
-        <param name="weight">1000</param>
-        <param name="pieces">32</param>
-        <param name="roll_type">Оушен темпура</param>
-        <param name="roll_type">калифорния темпура</param>
-        <param name="roll_type">маки кларий-краб</param>
-        <param name="roll_type">маки с курицей и яки соусом.</param>
       </offer>
       <offer id="224" available="true">
         <name>Сет &quot;НА ДВОИХ&quot;</name>
@@ -463,6 +463,28 @@
         <param name="roll_type">лосось</param>
         <param name="roll_type">снежный краб</param>
         <param name="roll_type">кальмар.</param>
+      </offer>
+      <offer id="397" available="true">
+        <name>Сет &quot;ПРОМОНАБОР ЗИМНИЙ&quot;</name>
+        <vendorCode>397</vendorCode>
+        <url><![CDATA[https://суши-стрит.рф/index.php?route=product/product&amp;path=96&amp;product_id=397]]></url>
+        <price>1799</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_97.jpg</picture>
+        <description>Состав: филадельфия лайт, калифорния, цезарь темпура, калифорния темпура, маки огурец. ролл запеченный с курицей, хот чикен, ролл запеченный кальмар. Вес 1,65кг/62шт. *В набор из данной категории не входят имбирь,васаби, палочки и соевый соус,и оплачивается отдельно при необходимости.</description>
+        <sales_notes>Артикул: 397. Доставка по Рязани.</sales_notes>
+        <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
+        <param name="pieces">62</param>
+        <param name="roll_type">филадельфия лайт</param>
+        <param name="roll_type">калифорния</param>
+        <param name="roll_type">цезарь темпура</param>
+        <param name="roll_type">калифорния темпура</param>
+        <param name="roll_type">маки огурец.ролл запеченный с курицей</param>
+        <param name="roll_type">хот чикен</param>
+        <param name="roll_type">ролл запеченный кальмар.Вес 1</param>
+        <param name="roll_type">65кг62шт.</param>
       </offer>
       <offer id="308" available="true">
         <name>Сет &quot;ОРИГАМИ&quot;</name>
@@ -514,28 +536,6 @@
         <param name="roll_type">мини ролл угорь</param>
         <param name="roll_type">мини ролл лосось.</param>
       </offer>
-      <offer id="397" available="true">
-        <name>Сет &quot;ПРОМОНАБОР ЗИМНИЙ&quot;</name>
-        <vendorCode>397</vendorCode>
-        <url><![CDATA[https://суши-стрит.рф/index.php?route=product/product&amp;path=96&amp;product_id=397]]></url>
-        <price>1799</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>1</categoryId>
-        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_97.jpg</picture>
-        <description>Состав: филадельфия лайт, калифорния, цезарь темпура, калифорния темпура, маки огурец. ролл запеченный с курицей, хот чикен, ролл запеченный кальмар. Вес 1,65кг/62шт. *В набор из данной категории не входят имбирь,васаби, палочки и соевый соус,и оплачивается отдельно при необходимости.</description>
-        <sales_notes>Артикул: 397. Доставка по Рязани.</sales_notes>
-        <collectionId>promonabory</collectionId>
-        <collectionId>s_filedelfiej</collectionId>
-        <param name="pieces">62</param>
-        <param name="roll_type">филадельфия лайт</param>
-        <param name="roll_type">калифорния</param>
-        <param name="roll_type">цезарь темпура</param>
-        <param name="roll_type">калифорния темпура</param>
-        <param name="roll_type">маки огурец.ролл запеченный с курицей</param>
-        <param name="roll_type">хот чикен</param>
-        <param name="roll_type">ролл запеченный кальмар.Вес 1</param>
-        <param name="roll_type">65кг62шт.</param>
-      </offer>
       <offer id="287" available="true">
         <name>Сет &quot;ПРОМОНАБОР ЛЮБИМЫЙ&quot;</name>
         <vendorCode>287</vendorCode>
@@ -546,8 +546,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_287.jpg</picture>
         <description>Состав: Филадельфия лайт, калифорния с креветкой, цезарь ролл, запеченная калифорния, запеченный с лососем гриль, запеченный с курицей,мини ролл с креветкой, мини ролл с лососем, мини ролл с кальмаром, мини ролл &quot;снежный краб&quot;. 1900гр/72шт. *В набор не входят специи (имбирь,васаби,соевый соус).</description>
         <sales_notes>Артикул: 287. Доставка по Рязани.</sales_notes>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
         <param name="weight">1900</param>
         <param name="pieces">72</param>
         <param name="roll_type">Филадельфия лайт</param>
@@ -573,19 +573,6 @@
         <sales_notes>Артикул: 114. Доставка по Рязани.</sales_notes>
         <collectionId>s_filedelfiej</collectionId>
         <param name="pieces">48</param>
-      </offer>
-      <offer id="149" available="true">
-        <name>Сет &quot;СМАЙЛ&quot;</name>
-        <vendorCode>149</vendorCode>
-        <url><![CDATA[https://суши-стрит.рф/index.php?route=product/product&amp;path=60_98&amp;product_id=149]]></url>
-        <price>579</price>
-        <currencyId>RUB</currencyId>
-        <categoryId>1</categoryId>
-        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_63.jpg</picture>
-        <description>Калифорния, мини ролл огурец, суши острый краб, суши острый кальмар.Вес 390 гр/16шт.</description>
-        <sales_notes>Артикул: 149. Доставка по Рязани.</sales_notes>
-        <param name="weight">390</param>
-        <param name="pieces">16</param>
       </offer>
       <offer id="238" available="true">
         <name>Сет &quot;Вулкан&quot;</name>
@@ -624,24 +611,24 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_99.jpg</picture>
         <description>Калифорния классик, филадельфия лайт, маки с огурцом + Набор &quot;запеченный хит&quot;+набор &quot;темпура стрит&quot;+подарок &quot;морской ролл&quot;.Вес 2500 гр/82шт. Набор &quot;Огромный&quot; является акционным и с другими акциями не суммируется. * В набор из данной категории,не входят имбирь, васаби, соевый соус, и оплачиваются отдельно при необходимости.</description>
         <sales_notes>Артикул: 99. Доставка по Рязани.</sales_notes>
-        <collectionId>akcii</collectionId>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
+        <collectionId>akcii</collectionId>
         <param name="weight">2500</param>
         <param name="pieces">82</param>
       </offer>
-      <offer id="160" available="true">
-        <name>Сет &quot;ТЕМПУРА СТРИТ&quot;</name>
-        <vendorCode>160</vendorCode>
-        <url><![CDATA[https://суши-стрит.рф/index.php?route=product/product&amp;path=60_98&amp;product_id=160]]></url>
-        <price>969</price>
+      <offer id="149" available="true">
+        <name>Сет &quot;СМАЙЛ&quot;</name>
+        <vendorCode>149</vendorCode>
+        <url><![CDATA[https://суши-стрит.рф/index.php?route=product/product&amp;path=60_98&amp;product_id=149]]></url>
+        <price>579</price>
         <currencyId>RUB</currencyId>
         <categoryId>1</categoryId>
-        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_64.jpg</picture>
-        <description>Краб темпура, цезарь темпура, темпура с креветкой.Вес 690 гр/24шт.</description>
-        <sales_notes>Артикул: 160. Доставка по Рязани.</sales_notes>
-        <param name="weight">690</param>
-        <param name="pieces">24</param>
+        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_63.jpg</picture>
+        <description>Калифорния, мини ролл огурец, суши острый краб, суши острый кальмар.Вес 390 гр/16шт.</description>
+        <sales_notes>Артикул: 149. Доставка по Рязани.</sales_notes>
+        <param name="weight">390</param>
+        <param name="pieces">16</param>
       </offer>
       <offer id="239" available="true">
         <name>Сет &quot;Гинза&quot;</name>
@@ -682,6 +669,19 @@
         <param name="roll_type">миниролл угорь</param>
         <param name="roll_type">мини ролл огурец</param>
         <param name="roll_type">мини ролл краб.</param>
+      </offer>
+      <offer id="160" available="true">
+        <name>Сет &quot;ТЕМПУРА СТРИТ&quot;</name>
+        <vendorCode>160</vendorCode>
+        <url><![CDATA[https://суши-стрит.рф/index.php?route=product/product&amp;path=60_98&amp;product_id=160]]></url>
+        <price>969</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_64.jpg</picture>
+        <description>Краб темпура, цезарь темпура, темпура с креветкой.Вес 690 гр/24шт.</description>
+        <sales_notes>Артикул: 160. Доставка по Рязани.</sales_notes>
+        <param name="weight">690</param>
+        <param name="pieces">24</param>
       </offer>
       <offer id="117" available="true">
         <name>Сет &quot;СУШИ СТРИТ КЛАССИК&quot;</name>
@@ -764,8 +764,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_69.jpg</picture>
         <description>Филадельфия лайт, калифорния классическая, хот чикен, запеченный угорь-краб.Вес 820 гр/32шт.</description>
         <sales_notes>Артикул: 230. Доставка по Рязани.</sales_notes>
-        <collectionId>s_filedelfiej</collectionId>
         <collectionId>hity</collectionId>
+        <collectionId>s_filedelfiej</collectionId>
         <param name="weight">820</param>
         <param name="pieces">32</param>
       </offer>
@@ -1140,7 +1140,7 @@
         <name>С филадельфией</name>
         <url><![CDATA[https://суши-стрит.рф/nabory/?item[item_id_parent]=28]]></url>
         <description>Наборы категории: С филадельфией</description>
-        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_312.jpg</picture>
+        <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_301.jpg</picture>
       </collection>
     </collections>
   </shop>
