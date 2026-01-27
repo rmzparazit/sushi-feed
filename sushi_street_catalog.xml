@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<yml_catalog date="2026-01-26T21:28:43">
+<yml_catalog date="2026-01-27T21:22:45">
   <shop>
     <name>Суши Стрит</name>
     <company>Суши Стрит Рязань</company>
@@ -58,8 +58,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_316.jpg</picture>
         <description>Филадельфия лайт, запеченый с креветкой, цезарь темпура. Вес 700гр/24шт. *В данный набор не входит имбирь,васаби, соевый соус.</description>
         <sales_notes>Артикул: 316. Доставка по Рязани.</sales_notes>
-        <collectionId>hity</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>hity</collectionId>
         <param name="weight">700</param>
         <param name="pieces">24</param>
       </offer>
@@ -91,8 +91,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_318.jpg</picture>
         <description>Состав: Маки с окунем и сырным соусом, маки кларий-краб, маки с курицей и яки соусом, маки с кальмаром и снежным крабом в фирменном соусе, р олл калифорния темпура, ролл имбирная темпура, ролл  цыпа барбекю темпура, оушен темпура, филадельфия лайт, калифорния, микс ролл, маки с огурцом, самурай. 3кг/102 шт *Данный набор является акционным и с другими акциями не суммируется. *В набор не входят специи (имбирь,васаби,соевый соус).</description>
         <sales_notes>Артикул: 318. Доставка по Рязани.</sales_notes>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
         <collectionId>kilogrammovye</collectionId>
         <param name="pieces">102</param>
         <param name="roll_type">Маки с окунем и сырным соусом</param>
@@ -201,8 +201,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_86.jpg</picture>
         <description>Состав: филадельфия лайт, калифорния, цезарь темпура, калифорния темпура, маки огурец.Вес 1кг/38шт. *В набор из данной категории не входят имбирь,васаби и соевый соус,и оплачивается отдельно при необходимости. *Набор является акционным и не суммируется с другими акциями и предложениями.</description>
         <sales_notes>Артикул: 86. Доставка по Рязани.</sales_notes>
-        <collectionId>s_filedelfiej</collectionId>
         <collectionId>kilogrammovye</collectionId>
+        <collectionId>s_filedelfiej</collectionId>
         <collectionId>akcii</collectionId>
         <param name="pieces">38</param>
         <param name="roll_type">филадельфия лайт</param>
@@ -447,8 +447,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_97.jpg</picture>
         <description>Состав: филадельфия лайт, калифорния, цезарь темпура, калифорния темпура, маки огурец. ролл запеченный с курицей, хот чикен, ролл запеченный кальмар. Вес 1,65кг/62шт. *В набор из данной категории не входят имбирь,васаби, палочки и соевый соус,и оплачивается отдельно при необходимости.</description>
         <sales_notes>Артикул: 397. Доставка по Рязани.</sales_notes>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
         <param name="pieces">62</param>
         <param name="roll_type">филадельфия лайт</param>
         <param name="roll_type">калифорния</param>
@@ -486,8 +486,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_287.jpg</picture>
         <description>Состав: Филадельфия лайт, калифорния с креветкой, цезарь ролл, запеченная калифорния, запеченный с лососем гриль, запеченный с курицей,мини ролл с креветкой, мини ролл с лососем, мини ролл с кальмаром, мини ролл &quot;снежный краб&quot;. 1900гр/72шт. *В набор не входят специи (имбирь,васаби,соевый соус).</description>
         <sales_notes>Артикул: 287. Доставка по Рязани.</sales_notes>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
         <param name="weight">1900</param>
         <param name="pieces">72</param>
         <param name="roll_type">Филадельфия лайт</param>
@@ -564,8 +564,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_99.jpg</picture>
         <description>Калифорния классик, филадельфия лайт, маки с огурцом + Набор &quot;запеченный хит&quot;+набор &quot;темпура стрит&quot;+подарок &quot;морской ролл&quot;.Вес 2500 гр/82шт. Набор &quot;Огромный&quot; является акционным и с другими акциями не суммируется. * В набор из данной категории,не входят имбирь, васаби, соевый соус, и оплачиваются отдельно при необходимости.</description>
         <sales_notes>Артикул: 99. Доставка по Рязани.</sales_notes>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
         <collectionId>akcii</collectionId>
         <param name="weight">2500</param>
         <param name="pieces">82</param>
@@ -633,8 +633,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_100.jpg</picture>
         <description>Состав:Состав: Филадельфия лайт, калифорния классическая, хот чикен, запеченный угорь-краб, краб темпура, цезарь темпура, темпура с креветкой. Вес 1510гр/ 56шт. *Набор Фейерверк является акционным набором и не суммируется с другими акциями. *В набор не входят специи (имбирь,васаби,соевый соус).</description>
         <sales_notes>Артикул: 100. Доставка по Рязани.</sales_notes>
-        <collectionId>promonabory</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>promonabory</collectionId>
         <param name="weight">1510</param>
         <param name="pieces">56</param>
         <param name="roll_type">Состав Филадельфия лайт</param>
@@ -726,8 +726,8 @@
         <picture>https://суши-стрит.рф/sys/data/catalog/thumbs/image_2_69.jpg</picture>
         <description>Филадельфия лайт, калифорния классическая, хот чикен, запеченный угорь-краб.Вес 820 гр/32шт.</description>
         <sales_notes>Артикул: 230. Доставка по Рязани.</sales_notes>
-        <collectionId>hity</collectionId>
         <collectionId>s_filedelfiej</collectionId>
+        <collectionId>hity</collectionId>
         <param name="weight">820</param>
         <param name="pieces">32</param>
       </offer>
